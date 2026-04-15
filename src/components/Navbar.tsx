@@ -15,7 +15,7 @@ function Navbar() {
         <div className='w-[30%] border border-gray-500 hover:border-gray-200 rounded-xl'>
             <input type="text" placeholder='search sections ...' className='w-full border-none outline-none hover:placeholder-gray-200 rounded-xl py-1 px-2' />
         </div>
-        <div className='flex justify-center items-center gap-8 flex-wrap text-sm'>
+        <div className='flex justify-center items-center gap-8 flex-wrap text-sm '>
             <NavLink href="/about">ABOUT ME</NavLink>
             <NavLink href="/skills">SKILLS</NavLink>
             <NavLink href="/projects">PROJECTS</NavLink>

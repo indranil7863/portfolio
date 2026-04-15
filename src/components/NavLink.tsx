@@ -10,7 +10,7 @@ function NavLink({href, children}: {href: string, children:ReactNode}) {
     const isActive = pathname === href
   return (
 
-    <Link className={`${isActive ? "text-gray-200 font-semibold border-b-2 pb-0.5 border-b-red-500" : "text-gray-500 hover:text-red-500"}`} href={href}>{children} </Link>
+    <Link className={`${isActive ? "text-gray-200 font-semibold border-b-2 pb-0.5 border-b-red-500" : "text-gray-200 font-semibold hover:text-red-500"}`} href={href}>{children} </Link>
   )
 }
 

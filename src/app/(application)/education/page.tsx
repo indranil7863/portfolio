@@ -1,9 +1,94 @@
-import React from 'react'
+import React from "react";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 function page() {
   return (
-    <div>page</div>
-  )
+    <div className="text-white flex justify-center items-center gap-12 flex-col lg:w-[70%] lg:mx-auto">
+      <h1 className="text-5xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+        Education
+        <span
+          className="absolute inset-x-0 bottom-0 h-0.5 
+              bg-linear-to-r from-transparent via-blue-500 to-transparent"
+        ></span>
+      </h1>
+      <p className="text-4xl font-semibold text-gray-400 px-4 text-center lg:text-start">
+        I learned a lot, but the real learning happens in the code editor!
+      </p>
+      <p className="text-xl text-gray-200 px-4 text-center lg:text-start">
+        Education has always been the cornerstone of my journey into the tech
+        world. Pursuing a Bachelor's in Computer Science and Engineering (CSE)
+        at Ramkrishna Mahato Government Engineering College, Purulia, has
+        provided me a strong foundation in computer science and software
+        development.
+      </p>
+      <p className="text-xl text-gray-200 px-4 text-center lg:text-start">
+        My academic journey has been complemented by hands-on projects and
+        coursework, enabling me to build practical skills and a deep
+        understanding of modern technological solutions.
+      </p>
+      <div className="flex justify-center items-start gap-6 flex-col w-[95%] relative px-1 pb-4 mb-2">
+        <div className="absolute text-white top-0 h-full border border-blue-700 left-4.5 lg:left-6"></div>
+        <section className=" w-full relative flex just-center flex-row gap-2 rounded-sm">
+          <span className=" h-6 w-6 lg:h-10 lg:w-[40px] px-2 rounded-full bg-blue-400/50 flex justify-center items-center">
+            <span className="  bg-blue-200 rounded-full">
+              <CalendarMonthIcon className="bg-blue-600 px-1 py-1 rounded-full" />
+            </span>
+          </span>
+          <div className="py-2 flex flex-col justify-center gap-4  rounded-[5px]">
+            <p className="font-semibold text-xl text-gray-200">
+              Bachelor of Computer Science & Engineering, Ramkrishna Mahato
+              Government Engineering College, West Bengal, India
+              <span className="block text-sm text-gray-500 py-1">
+                Sept. 2022 - June 2026
+              </span>
+            </p>
+            <p className="text-gray-300 text-xl">
+              Pursuing CSE with a focus on programming, web development, and
+              software engineering. Current CGPA: 8.40.
+            </p>
+          </div>
+        </section>
+        <section className=" w-full relative flex just-center flex-row gap-2 rounded-sm">
+          <span className="h-6 w-6 lg:h-10 lg:w-[40px] rounded-full bg-blue-400/50 flex justify-center items-center">
+            <span className="  bg-blue-200 rounded-full">
+              <CalendarMonthIcon className="bg-blue-600 px-1 py-1 rounded-full" />
+            </span>
+          </span>
+          <div className="py-2 flex flex-col justify-center gap-4  rounded-[5px]">
+            <p className="font-semibold text-xl text-gray-200">
+              Higher Secondary Education, Ramnagar N.B.P.C High school, Hooghly,
+              West Bengal, India{" "}
+            </p>
+            <span className="block text-sm text-gray-500 py-1">
+              April 2019 - June 2021
+            </span>
+            <p className="text-gray-300 text-xl">
+              Completed 12th in Science, Overall Percentage: 89%.{" "}
+            </p>
+          </div>
+        </section>
+        <section className=" w-full relative flex just-center flex-row gap-2 rounded-sm">
+          <span className="h-6 w-6 lg:h-10 lg:w-[40px] rounded-full bg-blue-400/50 flex justify-center items-center">
+            <span className="  bg-blue-200 rounded-full">
+              <CalendarMonthIcon className="bg-blue-600 px-1 py-1 rounded-full" />
+            </span>
+          </span>
+          <div className="py-2 flex flex-col justify-center gap-4 rounded-[5px]">
+            <p className="font-semibold text-xl text-gray-200">
+              Secondary Education, Ramnagar N.B.P.C High school, Hooghly, West
+              Bengal, India
+            </p>
+            <span className="block text-sm text-gray-500 py-1">
+              Jan. 2018 - Feb. 2019
+            </span>
+            <p className="text-gray-300 text-xl">
+              Completed 10th grade with 86%.{" "}
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  );
 }
 
-export default page
+export default page;

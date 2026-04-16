@@ -15,7 +15,7 @@ import Link from "next/link";
 function page() {
   return (
     <>
-      <h1 className="w-[20%] text-center mx-auto text-5xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+      <h1 className="min-w-[20%] lg:w-[20%] text-center mx-auto lg:text-5xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
         Contacts
         <span
           className="absolute inset-x-0 bottom-0 h-0.5 
@@ -24,11 +24,11 @@ function page() {
       </h1>
       <div className="text-white flex lg:flex-row flex-col justify-around items-center lg:gap-8 lg:w-[90%] w-full mx-auto ">
         <section className=" flex flex-col justify-center lg:items-start items-center gap-6 flex-1">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] bg-clip-text text-transparent ">
+          <h1 className="lg:text-4xl text-2xl font-bold bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] bg-clip-text text-transparent pt-4">
             Get In Touch
           </h1>
-          <p className="px-2 relative tracking-wider py-2 leading-relaxed">
-            <span className="h-full absolute border border-pink-700 -left-1"></span>
+          <p className="lg:px-2  pl-4 pr-1 relative tracking-wider py-2 leading-relaxed">
+            <span className="h-full absolute border border-pink-700 lg:-left-1 left-2 top-0"></span>
             I’m currently looking for new opportunities and would love to
             discuss how my problem-solving skills and development experience can
             add value to your team. Whether you have a question or just want to

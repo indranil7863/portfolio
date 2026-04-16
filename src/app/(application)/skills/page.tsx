@@ -26,6 +26,7 @@ import Image from "next/image";
 import ExperienceImg from "../../../../public/images/experienceImg.jpg";
 import BuildIcon from "@mui/icons-material/Build";
 import LeetCodeSteak from "../components/LeetCodeSteak";
+import RedisImg from "../../../../public/images/redis.png";
 import Link from "next/link";
 import LeetcodeLink from "../components/LeetcodeLink";
 
@@ -98,6 +99,7 @@ function page() {
               <ToolItem href={AwsImg} tagname="AWS" />
               <ToolItem href={GitImg} tagname="git" />
               <ToolItem href={GitHubImg} tagname="github" />
+              <ToolItem href={RedisImg} tagname="redis" />
               <p className="w-full text-center text-gray-600">BACKEND LOGIC</p>
             </section>
           </div>

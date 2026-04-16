@@ -1,15 +1,203 @@
-import React from "react";
+"use client";
+import PersonIcon from "@mui/icons-material/Person";
+import ChatIcon from "@mui/icons-material/Chat";
+import EmailIcon from "@mui/icons-material/Email";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import SmartphoneIcon from "@mui/icons-material/Smartphone";
+import PlaceIcon from "@mui/icons-material/Place";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import SearchIcon from "@mui/icons-material/Search";
+import AttachMoneyIcon from "@mui/icons-material/AttachMoney";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import Link from "next/link";
 
 function page() {
   return (
     <>
-      <div className="flex flex-row">
-        <div className="animate-floatY flex justify-center items-center text-white w-full h-screen">
-          contact page
-        </div>
-        <div className="animate-floatDownUp flex justify-center items-center text-white w-full h-screen">
-          contact page
-        </div>
+      <h1 className="w-[20%] text-center mx-auto text-5xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+        Contacts
+        <span
+          className="absolute inset-x-0 bottom-0 h-0.5 
+              bg-linear-to-r from-transparent via-blue-500 to-transparent"
+        ></span>
+      </h1>
+      <div className="text-white flex lg:flex-row flex-col justify-around items-center lg:gap-8 lg:w-[90%] w-full mx-auto ">
+        <section className=" flex flex-col justify-center lg:items-start items-center gap-6 flex-1">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] bg-clip-text text-transparent ">
+            Get In Touch
+          </h1>
+          <p className="px-2 relative tracking-wider py-2 leading-relaxed">
+            <span className="h-full absolute border border-pink-700 -left-1"></span>
+            I’m currently looking for new opportunities and would love to
+            discuss how my problem-solving skills and development experience can
+            add value to your team. Whether you have a question or just want to
+            say hi, my inbox is always open!
+          </p>
+          <div className=" flex flex-row justify-center items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-600  border border-dotted hover:border-blue-600 ">
+            <span className="px-2 py-2 rounded-sm lg:block hidden text-blue-300 transition-colors duration-500 hover:bg-gray-700/50 bg-gray-700/40">
+              <EmailIcon />
+            </span>
+            <div className="flex flex-col justify-center lg:px-4 px-1">
+              <span className="text-gray-600 ">EMAIL</span>
+              <span>indranilbera542@gmail.com</span>
+            </div>
+            <div className="hidden lg:block">
+              <ChevronRightIcon />
+            </div>
+          </div>
+          <div className=" flex flex-row justify-center items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-600  border border-dotted hover:border-blue-600 ">
+            <span className="px-2 py-2 rounded-sm lg:block hidden text-blue-300 transition-colors duration-500 hover:bg-gray-700/50 bg-gray-700/40">
+              <SmartphoneIcon />
+            </span>
+            <div className="flex flex-col justify-center lg:pl-4 lg:pr-12 pr-22 pl-1">
+              <span className="text-gray-600">PHONE</span>
+              <span>+917863934256</span>
+            </div>
+            <div className="lg:pl-13 hidden lg:block">
+              <ChevronRightIcon />
+            </div>
+          </div>
+          <div className=" flex flex-row justify-center items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-600  border border-dotted hover:border-blue-600 ">
+            <span className="px-2 py-2 rounded-sm lg:block hidden text-blue-300 transition-colors duration-500 hover:bg-gray-700/50 bg-gray-700/40">
+              <PlaceIcon />
+            </span>
+            <div className="flex flex-col justify-center lg:px-4 pr-12 pl-1">
+              <span className="text-gray-600">LOCATION</span>
+              <span>Hooghly, West Bengal</span>
+            </div>
+            <div className="lg:pl-10 hidden lg:block">
+              <ChevronRightIcon />
+            </div>
+          </div>
+          <div className="py-8 flex justify-center items-center gap-4 ">
+            <Link
+              href={"/"}
+              title="Linkedin"
+              className="border px-2 py-2 rounded-full text-gray-500 hover:bg-blue-500 hover:text-white transition-transform hover:-translate-y-1"
+            >
+              <LinkedInIcon />
+            </Link>
+            <Link
+              href={"/"}
+              title="github"
+              className="border px-2 py-2 rounded-full text-gray-500 hover:bg-green-300 transition-transform hover:-translate-y-1"
+            >
+              <GitHubIcon />
+            </Link>
+          </div>
+        </section>
+        <section className="lg:px-4 flex-1 py-2 bg-gray-700/20 rounded-xl">
+          <h1 className="text-center py-4 text-2xl font-bold bg-gradient-to-r from-[#d53369] to-[#daae51] bg-clip-text text-transparent">
+            Let's Connect!
+          </h1>
+
+          <form className=" grid lg:grid-cols-2 grid-cols-1 items-start gap-x-4 gap-y-4 py-2 px-1">
+            <div className=" rounded-lg flex flex-row justify-between items-center bg-gray-600/50 ">
+              <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
+                <label
+                  htmlFor="name"
+                  className=" text-sm text-center text-gray-400"
+                >
+                  Identify Yourself
+                </label>
+                <input
+                  className=" rounded-sm  outline-0 pl-2"
+                  autoComplete="off"
+                  id="name"
+                  type="text"
+                  required
+                />
+              </div>
+              <div className="flex-1 pr-1">
+                <PersonIcon />
+              </div>
+            </div>
+            <div className=" rounded-lg flex flex-row justify-between items-center bg-gray-600/50 ">
+              <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
+                <label
+                  htmlFor="email"
+                  className=" text-sm text-center text-gray-400"
+                >
+                  Email Address
+                </label>
+                <input
+                  className=" rounded-sm  outline-0 pl-2"
+                  autoComplete="off"
+                  type="text"
+                  id="email"
+                  required
+                />
+              </div>
+              <div className="flex-1 pr-1">
+                <EmailIcon />
+              </div>
+            </div>
+            <div className=" rounded-lg flex flex-row justify-between items-center bg-gray-600/50 ">
+              <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
+                <label
+                  htmlFor="query"
+                  className=" text-sm text-center text-gray-400"
+                >
+                  Query
+                </label>
+                <input
+                  className=" rounded-sm  outline-0 pl-2"
+                  autoComplete="off"
+                  type="text"
+                  id="query"
+                  required
+                />
+              </div>
+              <div className="flex-1 pr-1">
+                <SearchIcon />
+              </div>
+            </div>
+            <div className=" rounded-lg flex flex-row justify-between items-center bg-gray-600/50 ">
+              <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
+                <label
+                  htmlFor="budget"
+                  className=" text-sm text-center text-gray-400"
+                >
+                  Est. Budget(USD)
+                </label>
+                <input
+                  className=" rounded-sm  outline-0 pl-2"
+                  autoComplete="off"
+                  type="text"
+                  id="budget"
+                />
+              </div>
+              <div className="flex-1 pr-1">
+                <AttachMoneyIcon />
+              </div>
+            </div>
+            <div className="lg:col-span-2 rounded-lg flex flex-row justify-between items-center bg-gray-600/50 ">
+              <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
+                <label
+                  htmlFor="msg"
+                  className=" text-sm text-center text-gray-400"
+                >
+                  Message Payload
+                </label>
+                <textarea
+                  className=" rounded-sm no-scrollbar overflow-auto outline-0 px-2  resize-none"
+                  autoComplete="off"
+                  id="msg"
+                />
+              </div>
+              <div className="flex-1 text-center">
+                <ChatIcon />
+              </div>
+            </div>
+            <button className=" lg:col-span-2 rounded-lg py-2 bg-blue-700 text-white text-xl font-semibold hover:bg-blue-500">
+              Submit
+              <span className="px-2 ">
+                <TelegramIcon />
+              </span>
+            </button>
+          </form>
+        </section>
       </div>
     </>
   );

@@ -120,13 +120,15 @@ function page() {
             prioritize clean, performant code. My goal is to bridge the gap
             between theoretical excellence and high-impact software solutions.
           </p>
+          <p className="text-2xl pt-6 font-semibold text-center">
+            LeetCode Stats
+          </p>
         </div>
       </div>
 
       <div>
         <LeetCodeSteak />
       </div>
-      
     </>
   );
 }

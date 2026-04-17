@@ -11,17 +11,17 @@ function page() {
               bg-linear-to-r from-transparent via-blue-500 to-transparent"
         ></span>
       </h1>
-      <p className="text-4xl font-semibold text-gray-400 px-4 text-center lg:text-start">
+      <p className="text-4xl font-semibold text-gray-400 px-4 ">
         I learned a lot, but the real learning happens in the code editor!
       </p>
-      <p className="text-xl text-gray-200 px-4 text-center lg:text-start">
+      <p className="text-xl text-gray-200 px-4 ">
         Education has always been the cornerstone of my journey into the tech
         world. Pursuing a Bachelor's in Computer Science and Engineering (CSE)
         at Ramkrishna Mahato Government Engineering College, Purulia, has
         provided me a strong foundation in computer science and software
         development.
       </p>
-      <p className="text-xl text-gray-200 px-4 text-center lg:text-start">
+      <p className="text-xl text-gray-200 px-4 ">
         My academic journey has been complemented by hands-on projects and
         coursework, enabling me to build practical skills and a deep
         understanding of modern technological solutions.

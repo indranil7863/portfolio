@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Navbar() {
   return (
-    <nav className="bg-gray-900 z-2 text-white flex justify-between px-8 items-center py-4 flex-wrap sticky top-0 ">
+    <nav className="bg-gray-900 z-5 text-white flex justify-between px-8 items-center py-4 flex-wrap sticky top-0 ">
       <Link href={"/"} className="relative">
         <h1 className="text-2xl tracking-widest font-medium">
           <span className="text-blue-600">INDRA</span>

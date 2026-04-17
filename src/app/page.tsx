@@ -5,13 +5,21 @@ import EastIcon from "@mui/icons-material/East";
 export default function Home() {
   return (
     <div className="bg-black/30 h-full w-full relative">
-      <div className="text-white absolute z-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center flex-col gap-6 ">
-        <p className="flex lg:flex-row text-2xl">
-          <span className="text-6xl text-blue-800 font-bold">Creative.</span>{" "}
-          <span className="text-6xl text-red-800 font-bold">Efficient.</span>{" "}
-          <span className="text-6xl text-white font-bold">Consistent.</span>
+      <div className="text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center flex-col gap-6 ">
+        <p className="flex lg:flex-row flex-col gap-4 lg:gap-0 items-center justify-center text-2xl">
+          <span className="lg:text-6xl text-4xl text-blue-800 font-bold">
+            Creative.
+          </span>{" "}
+          <span className="lg:text-6xl text-4xl text-red-800 font-bold">
+            Efficient.
+          </span>{" "}
+          <span className="lg:text-6xl text-4xl text-white font-bold">
+            Consistent.
+          </span>
         </p>
-        <p className="tracking-[5px]">Full Stack Development</p>
+        <p className="lg:tracking-[5px] tracking-[3px]">
+          Full Stack Development
+        </p>
         <div>
           <Link
             href={"/about"}
@@ -22,7 +30,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div style={{ width: "100%", height: "650px", position: "relative" }}>
+      <div className="w-full lg:h-[650px] h-screen relative">
         <Galaxy />
       </div>
     </div>

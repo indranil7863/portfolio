@@ -4,14 +4,14 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 function page() {
   return (
     <div className="text-white flex justify-center items-center gap-12 flex-col lg:w-[70%] lg:mx-auto">
-      <h1 className="text-5xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+      <h1 className="lg:text-5xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
         Education
         <span
           className="absolute inset-x-0 bottom-0 h-0.5 
               bg-linear-to-r from-transparent via-blue-500 to-transparent"
         ></span>
       </h1>
-      <p className="text-4xl font-semibold text-gray-400 px-4 ">
+      <p className="lg:text-4xl text-2xl font-semibold text-gray-400 px-4 ">
         I learned a lot, but the real learning happens in the code editor!
       </p>
       <p className="text-xl text-gray-200 px-4 ">

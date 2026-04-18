@@ -133,7 +133,7 @@ function page() {
             </Link>
           </div>
         </section>
-        <section className="lg:px-4 flex-1 py-2 bg-gray-700/20 shadow-2xl rounded-xl md:w-[80%] sm:w-[80%] w-[90%]">
+        <section className="lg:px-4 flex-1 py-2 bg-gray-700/20 shadow-2xl rounded-xl md:w-[80%] sm:w-[80%] w-[90%] mb-4">
           <h1 className="text-center py-4 text-2xl font-bold bg-gradient-to-r from-[#d53369] to-[#daae51] bg-clip-text dark:text-transparent">
             Let's Connect!
           </h1>

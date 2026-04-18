@@ -19,15 +19,15 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-gray-900 z-5 text-white flex lg:flex-row  gap-4 justify-between px-8 items-center py-4 flex-wrap sticky top-0 ">
+    <nav className="dark:bg-gray-900 bg-[#ffffff] z-5 text-white flex lg:flex-row  gap-4 justify-between px-8 items-center py-4 flex-wrap sticky top-0 ">
       <Link href={"/"} className="relative order-1 lg:order-1">
         <h1 className="text-2xl tracking-widest font-medium">
           <span className="text-blue-600">INDRA</span>
-          <span>NIL</span>
+          <span className="text-[#1e1b18] dark:text-white">NIL</span>
           <span className="text-red-600">B</span>
-          <span>ERA</span>
+          <span className="text-[#1e1b18] dark:text-white">ERA</span>
         </h1>
-        <p className="absolute top-[90%] text-[10px] tracking-[2PX] w-full text-gray-400">
+        <p className="absolute top-[90%] text-[10px] tracking-[2PX] w-full dark:text-gray-400 text-[#1e1b18]">
           FULLSTACK | DEVELOPMENT
         </p>
       </Link>

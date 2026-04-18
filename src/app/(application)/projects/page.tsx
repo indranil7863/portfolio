@@ -14,9 +14,9 @@ function page() {
               bg-linear-to-r from-transparent via-blue-500 to-transparent"
         ></span>
       </h1>
-      <p>A lot of ideas, but some are still under construction!</p>
+
       <section className="flex justify-center items-center flex-col gap-4 pb-8">
-        <p className="text-white text-2xl lg:text-start text-center w-full font-bold ">
+        <p className="dark:text-white text-[#333333]  text-2xl lg:text-start text-center w-full font-bold ">
           Mega Projects
         </p>
         <div className="flex lg:flex-row flex-col justify-center gap-8">

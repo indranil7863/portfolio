@@ -55,9 +55,9 @@ function page() {
               bg-linear-to-r from-transparent via-blue-500 to-transparent"
         ></span>
       </h1>
-      <div className="text-white flex lg:flex-row flex-col justify-around items-center lg:gap-8 md:w-[60%]  lg:w-[90%] w-full mx-auto ">
+      <div className="dark:text-white text-[#333333] flex lg:flex-row flex-col justify-around items-center lg:gap-8 md:w-[60%]  lg:w-[90%] w-full mx-auto ">
         <section className=" flex flex-col justify-center lg:items-start items-center gap-6 flex-1">
-          <h1 className="lg:text-4xl text-2xl font-bold bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] bg-clip-text text-transparent pt-4">
+          <h1 className="lg:text-4xl text-2xl font-bold bg-gradient-to-r from-[#00C9FF] to-[#92FE9D] bg-clip-text dark:text-transparent pt-4">
             Get In Touch
           </h1>
           <p className="lg:px-2  pl-4 pr-1 relative tracking-wider py-2 leading-relaxed">
@@ -70,7 +70,7 @@ function page() {
           <Link
             href={"mailto:indranilbera542@gmail.com"}
             target="_blank"
-            className=" flex flex-row justify-around w-[80%] items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-600  border border-dotted hover:border-blue-600 "
+            className=" flex flex-row justify-around w-[80%] items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-800  border-2 border-dotted dark:hover:border-blue-600  hover:border-blue-800"
           >
             <span className="px-2 py-2 rounded-sm sm:block hidden text-blue-300 transition-colors duration-500 hover:bg-gray-700/50 bg-gray-700/40">
               <EmailIcon />
@@ -85,7 +85,7 @@ function page() {
           </Link>
           <Link
             href={"tel:+917863934256"}
-            className=" flex flex-row justify-around w-[80%] items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-600  border border-dotted hover:border-blue-600 "
+            className=" flex flex-row justify-around w-[80%] items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm dark:hover:text-blue-600  border-2 border-dotted hover:border-blue-800 "
           >
             <span className="px-2 py-2 rounded-sm sm:block hidden text-blue-300 transition-colors duration-500 hover:bg-gray-700/50 bg-gray-700/40">
               <SmartphoneIcon />
@@ -101,7 +101,7 @@ function page() {
           <Link
             href="https://goo.gl/maps/w3v16G44ACQd1b7v5?g_st=aw"
             target="_blank"
-            className=" flex flex-row justify-around w-[80%] items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm hover:text-blue-600  border border-dotted hover:border-blue-600 "
+            className=" flex flex-row justify-around w-[80%] items-center py-2 lg:px-4 lg:gap-4 px-1 gap-1 bg-gray-800/30 rounded-sm dark:hover:text-blue-600 hover:text-blue-800  border-2 border-dotted hover:border-blue-800 "
           >
             <span className="px-2 py-2 rounded-sm sm:block hidden text-blue-300 transition-colors duration-500 hover:bg-gray-700/50 bg-gray-700/40">
               <PlaceIcon />
@@ -119,7 +119,7 @@ function page() {
               href={"https://www.linkedin.com/in/indranil-bera-a12132256/"}
               target="_blank"
               title="Linkedin"
-              className="border px-2 py-2 rounded-full text-gray-500 hover:bg-blue-500 hover:text-white transition-transform hover:-translate-y-1"
+              className="border px-2 py-2 rounded-full dark:text-gray-500 text-white bg-gray-900/30 dark:hover:bg-blue-500  hover:bg-blue-700 dark:hover:text-white transition-transform hover:-translate-y-1"
             >
               <LinkedInIcon />
             </Link>
@@ -127,14 +127,14 @@ function page() {
               href={"https://github.com/indranil7863"}
               target="_blank"
               title="github"
-              className="border px-2 py-2 rounded-full text-gray-500 hover:bg-green-300 transition-transform hover:-translate-y-1"
+              className="border px-2 py-2 rounded-full dark:text-gray-500 text-white bg-gray-900/30 hover:bg-green-300  dark:hover:text-white hover:text-black transition-transform hover:-translate-y-1"
             >
               <GitHubIcon />
             </Link>
           </div>
         </section>
-        <section className="lg:px-4 flex-1 py-2 bg-gray-700/20 rounded-xl md:w-[80%] sm:w-[80%] w-[90%]">
-          <h1 className="text-center py-4 text-2xl font-bold bg-gradient-to-r from-[#d53369] to-[#daae51] bg-clip-text text-transparent">
+        <section className="lg:px-4 flex-1 py-2 bg-gray-700/20 shadow-2xl rounded-xl md:w-[80%] sm:w-[80%] w-[90%]">
+          <h1 className="text-center py-4 text-2xl font-bold bg-gradient-to-r from-[#d53369] to-[#daae51] bg-clip-text dark:text-transparent">
             Let's Connect!
           </h1>
 
@@ -146,7 +146,7 @@ function page() {
               <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
                 <label
                   htmlFor="name"
-                  className=" text-sm text-center text-gray-400"
+                  className=" text-sm text-center dark:text-gray-400 text-[#333333]"
                 >
                   Identify Yourself
                 </label>
@@ -169,12 +169,12 @@ function page() {
               <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
                 <label
                   htmlFor="email"
-                  className=" text-sm text-center text-gray-400"
+                  className=" text-sm text-center dark:text-gray-400 text-[#333333]"
                 >
                   Email Address
                 </label>
                 <input
-                  className=" rounded-sm  outline-0 pl-2"
+                  className="rounded-sm  outline-0 pl-2"
                   autoComplete="off"
                   type="email"
                   onChange={HandleFormData}
@@ -192,7 +192,7 @@ function page() {
               <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
                 <label
                   htmlFor="query"
-                  className=" text-sm text-center text-gray-400"
+                  className=" text-sm text-center dark:text-gray-400 text-[#333333]"
                 >
                   Query
                 </label>
@@ -215,7 +215,7 @@ function page() {
               <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
                 <label
                   htmlFor="budget"
-                  className=" text-sm text-center text-gray-400"
+                  className=" text-sm text-center dark:text-gray-400 text-[#333333]"
                 >
                   Est. Budget(USD)
                 </label>
@@ -237,7 +237,7 @@ function page() {
               <div className=" w-[80%] flex flex-col px-1 rounded-sm py-2">
                 <label
                   htmlFor="msg"
-                  className=" text-sm text-center text-gray-400"
+                  className=" text-sm text-center dark:text-gray-400 text-[#333333]"
                 >
                   Message Payload
                 </label>

@@ -13,7 +13,7 @@ function NavLink({ href, children }: { href: string; children: ReactNode }) {
   return (
     <>
       <Link
-        className={`text-center ${isActive ? " text-red-500 font-semibold border-b-2 pb-0.5 border-b-red-500" : "text-gray-200 font-semibold hover:text-red-500"}`}
+        className={`text-center text-[#333333] ${isActive ? " text-[#d97757] font-semibold border-b-2 pb-0.5 border-b-[#d97757]" : "dark:text-gray-200 font-semibold hover:text-red-500"}`}
         href={href}
       >
         {children}{" "}

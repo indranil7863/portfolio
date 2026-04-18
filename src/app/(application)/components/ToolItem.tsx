@@ -2,10 +2,16 @@ import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 
-function ToolItem({ href, tagname }: { href: StaticImageData; tagname: string }) {
+function ToolItem({
+  href,
+  tagname,
+}: {
+  href: StaticImageData;
+  tagname: string;
+}) {
   return (
     <>
-      <div className="flex items-center justify-center gap-2 bg-white text-black rounded-sm py-1 px-2">
+      <div className="flex items-center justify-center gap-2 dark:bg-white dark:text-black text-[#333333] bg-[#f5f5f5] rounded-sm py-1 px-2">
         <Image
           src={href}
           width={20}

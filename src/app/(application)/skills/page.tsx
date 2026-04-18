@@ -42,10 +42,10 @@ function page() {
           ></span>
         </h1>
         <div>
-          <p className="text-xl text-gray-300 tracking-wider">
+          <p className="text-xl dark:text-gray-300 text-[#333333] tracking-wider">
             As a full-stack Software Engineer, I specialize in building scalable
             web applications using modern technologies such as{" "}
-            <span className="text-white font-semibold">
+            <span className="dark:text-white  font-semibold">
               {" "}
               Next.js, React, and Tailwind CSS
             </span>
@@ -69,10 +69,10 @@ function page() {
               <ToolItem href={RenderImg} tagname="Render" />
               <p className="text-center text-gray-600">FRONTEND SYSTEMS</p>
             </section>
-            <section className="relative text-white flex justify-center items-center  flex-col px-3 py-3 gap-2  ">
-              <div className="absolute border animate-spin animation-duration-[3s]  h-40 w-40  bg-gray-100/20 rounded-full  ">
-                <div className="h-4 w-4 bg-amber-600 absolute top-13 -left-1 rounded-full">
-                  <div className="h-4 w-4 bg-amber-400 rounded-full animate-ping"></div>
+            <section className="relative text-white flex justify-center items-center  dark:bg-gray-800   flex-col px-3 py-3 gap-2  ">
+              <div className="absolute border-2 animate-spin animation-duration-[3s]    h-40 w-40 dark:bg-gray-100/20 border-[#606060] rounded-full  ">
+                <div className="h-4 w-4 dark:bg-amber-600 bg-green-600 absolute top-13 -left-1 rounded-full">
+                  <div className="h-4 w-4 dark:bg-amber-400 bg-green-400 rounded-full animate-ping"></div>
                 </div>
               </div>
 
@@ -84,8 +84,12 @@ function page() {
                   width={70}
                 />
               </span>
-              <span className="text-xl font-bold">EXPERIENCE</span>
-              <span className="text-sm text-gray-400">DATABASE</span>
+              <span className="text-xl text-[#333333] dark:text-white font-bold">
+                EXPERIENCE
+              </span>
+              <span className="text-sm dark:text-gray-400 text-[#333333]/10">
+                DATABASE
+              </span>
             </section>
             <section className="text-white flex justify-center flex-wrap  items-center gap-3 animate-floatDownUp">
               <ToolItem href={ExpressImg} tagname="Express" />
@@ -111,7 +115,7 @@ function page() {
           </p>
         </div>
         <div>
-          <p className="text-white tracking-wide text-[20px]">
+          <p className="dark:text-white text-[#333333] tracking-wide text-[20px]">
             Deeply committed to algorithmic efficiency, I have solved
             <LeetcodeLink />
             to solidify my foundation in data structures and logic. This
@@ -122,7 +126,7 @@ function page() {
             prioritize clean, performant code. My goal is to bridge the gap
             between theoretical excellence and high-impact software solutions.
           </p>
-          <p className="text-2xl pt-6 font-semibold text-center">
+          <p className="text-2xl pt-6 font-semibold text-[#333333] dark:text-white text-center">
             LeetCode Stats
           </p>
         </div>

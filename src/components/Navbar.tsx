@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar";
 import NavLink from "./NavLink";
 import Link from "next/link";
 import { useState } from "react";
+import { ModeToggle } from "@/app/(application)/components/ModeToggle";
 
 function Navbar() {
   const [isToggle, setIsToggle] = useState<Boolean>(false);
@@ -81,11 +82,9 @@ function Navbar() {
         <NavLink href="/projects">PROJECTS</NavLink>
         <NavLink href="/education">EDUCATION</NavLink>
         <NavLink href="/contacts">CONTACTS</NavLink>
-
-        {/* <button>
-            <LightModeIcon/>
-            <NightsStayIcon/>
-           </button> */}
+      </div>
+      <div className="order-4 hidden lg:flex">
+        <ModeToggle />
       </div>
       <div
         className="lg:hidden block order-2 lg:order-4"
@@ -96,7 +95,7 @@ function Navbar() {
         </span>
       </div>
       {isToggle && (
-        <div className="absolute right-0 top-0 flex flex-col w-[200px] gap-4 h-screen text-white bg-gray-700 px-3 py-6">
+        <div className="absolute right-0 top-0 flex flex-col w-[200px] gap-4 h-screen dark:text-white  text-[#333333] dark:bg-gray-700 bg-[#e0e0e0] border-l-4 border-l-gray-300 px-3 py-6">
           <Sidebar setIsToggle={setIsToggle} />
         </div>
       )}

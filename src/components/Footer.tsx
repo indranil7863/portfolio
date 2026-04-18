@@ -9,7 +9,7 @@ function Footer() {
           <p>
             Built with{" "}
             <span className="dark:text-gray-200 text-[#333333]">
-              Next.js, reactBits/ui
+              Next.js, reactBits/ui, Typescript
             </span>{" "}
             and{" "}
             <span className="dark:text-gray-200 text-[#333333]">

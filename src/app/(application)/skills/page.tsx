@@ -4,12 +4,13 @@ import CSSIMG from "../../../../public/images/CSS3_logo.svg.png";
 import JSIMG from "../../../../public/images/images.png";
 import TSIMG from "../../../../public/images/typescript.png";
 import ReactImg from "../../../../public/images/React-icon.svg.png";
-import NextImg from "../../../../public/images/nextjs.jpeg";
+import NextImg from "../../../../public/images/Nextjs.png";
 import ReactBitImg from "../../../../public/images/ReactBits.png";
 import MatUIImg from "../../../../public/images/materialUI.png";
 import PostmanIMG from "../../../../public/images/postman.png";
 import VercelImg from "../../../../public/images/vercel.png";
 import RenderImg from "../../../../public/images/render.png";
+import TailwindImg from "../../../../public/images/tailwind.png";
 
 import ExpressImg from "../../../../public/images/expressjs.webp";
 import NodeImg from "../../../../public/images/nodejs.png";
@@ -27,6 +28,7 @@ import ExperienceImg from "../../../../public/images/experienceImg.jpg";
 import BuildIcon from "@mui/icons-material/Build";
 import LeetCodeSteak from "../components/LeetCodeSteak";
 import RedisImg from "../../../../public/images/redis.png";
+import SadcnImg from "../../../../public/images/sadcnui.png";
 import Link from "next/link";
 import LeetcodeLink from "../components/LeetcodeLink";
 
@@ -60,10 +62,12 @@ function page() {
               <ToolItem href={CSSIMG} tagname="CSS" />
               <ToolItem href={JSIMG} tagname="JavaScript" />
               <ToolItem href={TSIMG} tagname="TypeScript" />
-              <ToolItem href={ReactImg} tagname="React" />
-              <ToolItem href={NextImg} tagname="Next" />
+              <ToolItem href={TailwindImg} tagname="Tailwindcss" />
+              <ToolItem href={ReactImg} tagname="ReactJs" />
+              <ToolItem href={NextImg} tagname="NextJs" />
               <ToolItem href={ReactBitImg} tagname="ReactBits/ui" />
               <ToolItem href={MatUIImg} tagname="Material/ui" />
+              <ToolItem href={SadcnImg} tagname="Shadcn/ui" />
               <ToolItem href={PostmanIMG} tagname="Postman" />
               <ToolItem href={VercelImg} tagname="Vercel" />
               <ToolItem href={RenderImg} tagname="Render" />

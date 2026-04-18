@@ -83,11 +83,11 @@ function Navbar() {
         <NavLink href="/education">EDUCATION</NavLink>
         <NavLink href="/contacts">CONTACTS</NavLink>
       </div>
-      <div className="order-4 hidden lg:flex">
+      <div className="order-4 hidden  lg:flex">
         <ModeToggle />
       </div>
       <div
-        className="lg:hidden block order-2 lg:order-4"
+        className="lg:hidden block order-2 text-black dark:text-white lg:order-4"
         onClick={toggleBtnHandler}
       >
         <span>

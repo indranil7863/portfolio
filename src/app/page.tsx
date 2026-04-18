@@ -1,11 +1,15 @@
 import Galaxy from "@/components/Background";
 import Link from "next/link";
 import EastIcon from "@mui/icons-material/East";
+import Typing from "@/components/Typing";
 
 export default function Home() {
   return (
     <div className="bg-black/30 h-full w-full relative">
       <div className="text-white absolute z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full flex justify-center items-center flex-col gap-6 ">
+        <div className="text-white">
+          <Typing />
+        </div>
         <p className="flex lg:flex-row flex-col gap-4 lg:gap-0 items-center justify-center text-2xl">
           <span className="lg:text-6xl text-4xl text-blue-800 font-bold">
             Creative.

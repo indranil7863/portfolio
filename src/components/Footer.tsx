@@ -6,28 +6,29 @@ function Footer() {
           <p>
             ©2026 <span className="lg:inline hidden pr-1">.</span>
           </p>
-          <p>
+          <p className="text-center">
             Built with{" "}
-            <span className="dark:text-gray-200 text-[#333333]">
+            <span className="dark:text-gray-200 text-[#333333] text-center">
               Next.js, reactBits/ui, Typescript
             </span>{" "}
             and{" "}
-            <span className="dark:text-gray-200 text-[#333333]">
+            <span className="dark:text-gray-200 text-center text-[#333333]">
               Tailwind CSS
             </span>{" "}
             <span className="lg:inline hidden pr-1">.</span>
           </p>
-          <p>
-            <span>Coded in </span>Vs-code and deployed with{" "}
+          <p className="text-center">
+            <span className="text-center">Coded in </span>Vs-code and deployed
+            with{" "}
             <span className="dark:text-gray-200 text-[#333333]">Vercel</span>
           </p>
         </div>
         <div className="flex flex-col lg:flex-row lg:justify-center text-gray-600 leading-loose">
-          <p>
+          <p className="text-center">
             Developed by <span className="text-blue-700">Indranil Bera</span>{" "}
             <span className="lg:inline  hidden pr-1">.</span>
           </p>
-          <p className="">
+          <p className="text-center">
             Source code available on{" "}
             <span className="text-blue-700">Github</span>
           </p>

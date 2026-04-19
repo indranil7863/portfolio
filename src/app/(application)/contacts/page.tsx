@@ -48,8 +48,9 @@ function page() {
 
   return (
     <>
-      <h1 className="min-w-[20%] lg:w-[20%] text-center mx-auto lg:text-5xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-        Contacts
+      <h1 className="min-w-[20%] lg:w-[30%] text-center mx-auto lg:text-5xl text-3xl tracking-wide relative font-bold py-4 pr-2 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+        <span className="w-full px-2 inline-block"> Contacts</span>
+
         <span
           className="absolute inset-x-0 bottom-0 h-0.5 
               bg-linear-to-r from-transparent via-blue-500 to-transparent"

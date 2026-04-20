@@ -53,7 +53,7 @@ function page() {
           <ProjectCard
             srcImg={StonePaperImg}
             projectTitle="Stone-Paper-Scissor Game"
-            srcLink="https://696b20d2dd90df276d0e80fc--storied-stroopwafel-5630fa.netlify.app/"
+            srcLink="https://storied-stroopwafel-5630fa.netlify.app/"
             newTab="_blank"
             projectDesc="Developed a fully interactive Rock Paper Scissors game utilizing Vanilla JavaScript to master DOM manipulation and conditional game logic. I leveraged Tailwind CSS to engineer a high-fidelity interface featuring dynamic state updates, responsive layouts, and smooth micro-interactions that enhance the overall user experience."
           />

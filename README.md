@@ -3,7 +3,8 @@
 A modern and fully responsive personal portfolio built using Next.js, TypeScript, ReactBits UI, and Tailwind CSS.
 
 ---
-
+[Live Link:] (https://indranil-portfolio-six.vercel.app/)
+---
 ## 🚀 Tech Stack
 
 - Next.js

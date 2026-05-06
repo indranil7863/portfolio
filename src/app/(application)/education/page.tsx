@@ -3,7 +3,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 
 function page() {
   return (
-    <div className="text-[#333333] bg-[#f5f5f5] dark:bg-gray-700 dark:text-[oklch(1.00 0 0)] flex justify-center items-center gap-12 flex-col lg:w-[70%] mb-4 rounded-sm lg:mx-auto">
+    <div className="text-[#333333]  dark:text-[oklch(1.00 0 0)] flex justify-center items-center gap-12 flex-col lg:w-[70%] mb-4 rounded-sm lg:mx-auto">
       <h1 className="lg:text-5xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
         Education
         <span

@@ -3,6 +3,8 @@ import DemoProjectImg from "../../../../public/images/demo-project-image.png";
 import TodoImg from "../../../../public/images/todoImg.jpg";
 import StonePaperImg from "../../../../public/images/stone-paper-scissorimg.jpg";
 import KruskalsAlgoImg from "../../../../public/images/kruskalsImg.png";
+import QuizCard from "../../../../public/images/quiz.webp";
+import DriveCard from "../../../../public/images/driveCard.webp";
 
 function page() {
   return (
@@ -21,18 +23,16 @@ function page() {
         </p>
         <div className="flex lg:flex-row flex-col justify-center gap-8">
           <ProjectCard
-            srcImg={DemoProjectImg}
+            srcImg={QuizCard}
             projectTitle="Quizlet | A Modern Quiz Website"
-            projectDesc="  A dynamic, fully responsive quiz platform built with React.js and
-          Tailwind CSS. Features real-time score tracking, categorized question
-          sets, and an interactive UI designed for seamless user engagement
-          across all devices."
-            srcLink="/"
+            projectDesc="Teach Stack used: Next.js | Tailwindcss | Typescript | Nodejs | Postgresql DB(prisma orm). key takeaways: User can create, Conduct and play quizes."
+            srcLink="https://quiz-app.indranil.shop"
+            newTab="_blank"
           />
           <ProjectCard
-            srcImg={DemoProjectImg}
-            srcLink="/"
-            projectTitle="MyDrive | Cloud Based Storage App"
+            srcImg={DriveCard}
+            srcLink=""
+            projectTitle="MyDrive | Cloud Based Storage App(work in progress...)"
             projectDesc="Engineered a full-stack cloud storage platform utilizing PostgreSQL to architect a robust relational schema for secure file and folder management. I leveraged Next.js and Tailwind CSS to deliver a high-performance, responsive interface that prioritises 
             seamless data integrity and efficient file operations"
           />

@@ -28,7 +28,7 @@ function Navbar() {
           <span className="text-[#1e1b18] dark:text-white">ERA</span>
         </h1>
         <p className="absolute top-[90%] text-[10px] tracking-[2PX] w-full dark:text-gray-400 text-[#1e1b18]">
-          FULLSTACK | DEVELOPMENT
+          FULLSTACK | WEB DEVELOPER
         </p>
       </Link>
 
@@ -37,7 +37,7 @@ function Navbar() {
           <Link
             href={"https://www.linkedin.com/in/indranil-bera-a12132256/"}
             target="_blank"
-            className="text-xl font-light group-hover:text-blue-600"
+            className="text-lg font-light group-hover:text-blue-600"
           >
             Linkedin
           </Link>
@@ -52,7 +52,7 @@ function Navbar() {
               "https://drive.google.com/file/d/1M9yiSvqmmInon36nhFi_SxfXiT60mu4r/view?usp=drivesdk"
             }
             target="_blank"
-            className="text-xl font-light group-hover:text-blue-600"
+            className="text-lg font-light group-hover:text-blue-600"
           >
             Resume
           </Link>
@@ -65,7 +65,7 @@ function Navbar() {
           <Link
             target="_blank"
             href={"https://github.com/indranil7863"}
-            className="text-xl font-light group-hover:text-blue-600"
+            className="text-lg font-light group-hover:text-blue-600"
           >
             gitHub
           </Link>

@@ -29,14 +29,18 @@ import BuildIcon from "@mui/icons-material/Build";
 import LeetCodeSteak from "../components/LeetCodeSteak";
 import RedisImg from "../../../../public/images/redis.png";
 import SadcnImg from "../../../../public/images/sadcnui.png";
-import Link from "next/link";
 import LeetcodeLink from "../components/LeetcodeLink";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: " Skills"
+}
 
 function page() {
   return (
     <>
       <div className="flex flex-col items-center justify-center gap-8 text-white w-[70%] mx-auto">
-        <h1 className="lg:text-5xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="lg:text-4xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
           Skills & Tools
           <span
             className="absolute inset-x-0 bottom-0 h-0.5 

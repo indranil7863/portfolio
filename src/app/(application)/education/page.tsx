@@ -1,17 +1,22 @@
-import React from "react";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: " Education"
+}
+
 
 function page() {
   return (
-    <div className="text-[#333333]  dark:text-[oklch(1.00 0 0)] flex justify-center items-center gap-12 flex-col lg:w-[70%] mb-4 rounded-sm lg:mx-auto">
-      <h1 className="lg:text-5xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+    <div className="text-[#333333]  dark:text-[oklch(1.00 0 0)] flex justify-center items-center gap-8 flex-col lg:w-[70%] mb-4 rounded-sm lg:mx-auto">
+      <h1 className="lg:text-4xl text-3xl tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
         Education
         <span
           className="absolute inset-x-0 bottom-0 h-0.5 
               bg-linear-to-r from-transparent via-blue-500 to-transparent"
         ></span>
       </h1>
-      <p className="lg:text-4xl text-2xl font-semibold text-[#333333] dark:text-white px-4 ">
+      <p className="lg:text-3xl text-2xl font-semibold text-[#333333] dark:text-white px-4 ">
         I learned a lot, but the real learning happens in the code editor!
       </p>
       <p className="text-xl  text-[#333333] dark:text-white px-4 ">

@@ -5,11 +5,16 @@ import StonePaperImg from "../../../../public/images/stone-paper-scissorimg.jpg"
 import KruskalsAlgoImg from "../../../../public/images/kruskalsImg.png";
 import QuizCard from "../../../../public/images/quiz.webp";
 import DriveCard from "../../../../public/images/driveCard.webp";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: " Projects"
+}
 
 function page() {
   return (
     <div className="flex flex-col justify-center items-center lg:w-[80%] mx-auto py-4">
-      <h1 className="lg:text-5xl text-3xl text-center tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+      <h1 className="lg:text-4xl text-3xl text-center tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
         Projects
         <span
           className="absolute inset-x-0 bottom-0 h-0.5 

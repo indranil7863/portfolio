@@ -11,7 +11,7 @@ function ToolItem({
 }) {
   return (
     <>
-      <div className="flex items-center justify-center gap-2 dark:bg-white dark:text-black text-[#333333] bg-[#f5f5f5] rounded-sm py-1 px-2">
+      <div className="flex items-center justify-center gap-2 dark:bg-white dark:text-black text-[white] bg-[gray] rounded-sm py-1 px-2">
         <Image
           src={href}
           width={20}

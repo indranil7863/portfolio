@@ -1,7 +1,13 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: " About"
+}
+
 function page() {
   return (
-    <div className="text-[#333333] dark:text-white  mx-auto lg:w-[70%] w-[90%] flex flex-col gap-8 pb-16 justify-center items-center">
-      <h1 className="lg:text-5xl text-3xl text-center tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
+    <div className="text-[#333333] dark:text-white  mx-auto lg:w-[70%] w-[90%] flex flex-col gap-2 pb-16 justify-center items-center">
+      <h1 className="lg:text-4xl text-3xl text-center tracking-wide relative font-bold py-4 bg-linear-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
         About Indranil
         <span
           className="absolute inset-x-0 bottom-0 h-0.5 

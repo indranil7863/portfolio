@@ -22,7 +22,7 @@ export default function Home() {
           </span>
         </p>
         <p className="lg:tracking-[5px] tracking-[3px]">
-          Full Stack Development
+          Full Stack Developer
         </p>
         <div>
           <Link

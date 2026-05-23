@@ -1,16 +1,18 @@
 "use client";
-import NavLink from "./NavLink";
+
 import Link from "next/link";
 import ClearIcon from "@mui/icons-material/Clear";
 import LaunchIcon from "@mui/icons-material/Launch";
-import { useState, useEffect, Dispatch, SetStateAction } from "react";
+import { useState, useEffect, Dispatch, SetStateAction, useRef } from "react";
 import { ModeToggle } from "@/app/(application)/components/ModeToggle";
+import { usePathname } from "next/navigation";
 
 function Sidebar({
   setIsToggle,
 }: {
   setIsToggle: Dispatch<SetStateAction<Boolean>>;
 }) {
+  const pathname = usePathname()
   const [currTime, setCurrTime] = useState<Date>(new Date());
   useEffect(() => {
     const timeout = setInterval(() => {
@@ -21,6 +23,27 @@ function Sidebar({
     };
   }, []);
 
+  const sidebarRef = useRef<HTMLInputElement>(null);
+  const buttonRef = useRef<HTMLDivElement>(null);
+  useEffect(()=>{
+
+    function clickOutsideHandler(event: MouseEvent){
+      if(event.target instanceof Node && buttonRef.current?.contains(event.target)){
+        return;
+      }
+      if(event.target instanceof Node && sidebarRef.current?.contains(event.target))return;
+
+      if(sidebarRef.current && event.target instanceof Node && !sidebarRef.current.contains(event.target)){
+          setIsToggle(prev => !prev);
+      }
+    }
+
+    document.addEventListener('click', clickOutsideHandler);
+    return ()=> {
+      document.removeEventListener('click', clickOutsideHandler);
+    }
+  }, [])
+
   const timeval: string = currTime.toLocaleTimeString("en-GB");
 
   function CancleHandler() {
@@ -28,20 +51,25 @@ function Sidebar({
   }
 
   return (
-    <>
+    <div ref={sidebarRef} className="flex flex-col gap-6">
+      <div className="flex justify-around">
       <button
         className="dark:text-white text-[#333333] flex flex-row justify-around  px-1"
         onClick={CancleHandler}
       >
         <ClearIcon />
-        <ModeToggle />
+       
       </button>
-      <div className="flex just-center  flex-col w-[70%] mx-auto gap-4 ">
-        <NavLink href="/about">ABOUT ME</NavLink>
-        <NavLink href="/skills">SKILLS</NavLink>
-        <NavLink href="/projects">PROJECTS</NavLink>
-        <NavLink href="/education">EDUCATION</NavLink>
-        <NavLink href="/contacts">CONTACTS</NavLink>
+      <div ref={buttonRef}>
+         <ModeToggle />
+      </div>
+      </div>
+      <div className="flex just-center items-center flex-col w-[70%] mx-auto gap-4 ">
+        <Link onClick={()=> setIsToggle(prev => !prev)} className={pathname === '/about'? "dark:text-blue-400 text-red-400": ""} href="/about">ABOUT ME</Link>
+        <Link onClick={()=> setIsToggle(prev => !prev)} className={pathname === '/skills'? "dark:text-blue-400 text-red-400": ""} href="/skills">SKILLS</Link>
+        <Link onClick={()=> setIsToggle(prev => !prev)} className={pathname === '/projects'? "dark:text-blue-400 text-red-400": ""} href="/projects">PROJECTS</Link>
+        <Link onClick={()=> setIsToggle(prev => !prev)} className={pathname === '/education'? "dark:text-blue-400 text-red-400": ""} href="/education">EDUCATION</Link>
+        <Link onClick={()=> setIsToggle(prev => !prev)} className={pathname === '/contacts'? "dark:text-blue-400 text-red-400": ""} href="/contacts">CONTACTS</Link>
       </div>
       <div className="flex flex-col justify-evenly gap-4">
         <div className="flex flex-row justify-center items-center gap-2 group">
@@ -49,6 +77,7 @@ function Sidebar({
             href={"https://www.linkedin.com/in/indranil-bera-a12132256/"}
             target="_blank"
             className="text-xl font-light group-hover:text-blue-600"
+         
           >
             Linkedin
           </Link>
@@ -59,6 +88,7 @@ function Sidebar({
         </div>
         <div className="flex flex-row justify-center items-center gap-2 group">
           <Link
+        
             href={
               "https://drive.google.com/file/d/1M9yiSvqmmInon36nhFi_SxfXiT60mu4r/view?usp=drivesdk"
             }
@@ -74,6 +104,7 @@ function Sidebar({
         </div>
         <div className="flex flex-row justify-center items-center gap-2 group">
           <Link
+        
             target="_blank"
             href={"https://github.com/indranil7863"}
             className="text-xl font-light group-hover:text-blue-600"
@@ -93,7 +124,7 @@ function Sidebar({
         </div>
         <div>{timeval}</div>
       </div>
-    </>
+    </div>
   );
 }
 

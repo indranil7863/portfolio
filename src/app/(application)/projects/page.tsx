@@ -36,7 +36,8 @@ function page() {
           />
           <ProjectCard
             srcImg={DriveCard}
-            srcLink=""
+            srcLink="https://github.com/indranil7863/MyDrive"
+            newTab="_blank"
             projectTitle="MyDrive | Cloud Based Storage App(work in progress...)"
             projectDesc="Engineered a full-stack cloud storage platform utilizing PostgreSQL to architect a robust relational schema for secure file and folder management. I leveraged Next.js and Tailwind CSS to deliver a high-performance, responsive interface that prioritises 
             seamless data integrity and efficient file operations"
@@ -58,7 +59,7 @@ function page() {
           <ProjectCard
             srcImg={StonePaperImg}
             projectTitle="Stone-Paper-Scissor Game"
-            srcLink="https://storied-stroopwafel-5630fa.netlify.app/"
+            srcLink="https://github.com/indranil7863/stone_paper_scissors_game"
             newTab="_blank"
             projectDesc="Developed a fully interactive Rock Paper Scissors game utilizing Vanilla JavaScript to master DOM manipulation and conditional game logic. I leveraged Tailwind CSS to engineer a high-fidelity interface featuring dynamic state updates, responsive layouts, and smooth micro-interactions that enhance the overall user experience."
           />
@@ -76,12 +77,12 @@ function page() {
             srcLink="https://medium.com/p/28387a659cc1?postPublishedType=initial"
             newTab="_blank"
           />
-          <ProjectCard
+          {/* <ProjectCard
             srcImg={StonePaperImg}
             projectTitle="Stone-Paper-Scissor Game"
             projectDesc="Developed a fully interactive Rock Paper Scissors game utilizing Vanilla JavaScript to master DOM manipulation and conditional game logic. I leveraged Tailwind CSS to engineer a high-fidelity interface featuring dynamic state updates, responsive layouts, and smooth micro-interactions that enhance the overall user experience."
             srcLink="/"
-          />
+          /> */}
         </div>
       </section>
     </div>
